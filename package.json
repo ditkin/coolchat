@@ -1,0 +1,21 @@
+{
+  "name": "music",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register",
+    "start": "(coffee --compile --output dist --watch src &);./node_modules/nodemon/bin/nodemon.js ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-script":"*",
+    "mocha":"*",
+    "nodemon":"*",
+    "http":"*",
+    "websocket":"*",
+    "pryjs":"*"
+  }
+}
