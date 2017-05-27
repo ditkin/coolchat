@@ -1,5 +1,5 @@
 {
-  "name": "music",
+  "name": "coolchat",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,11 +11,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "express":"*",
+    "express-session":"*",
+    "body-parser":"*",
+    "cookie-parser":"*",
+    "connect-mongo":"*",
     "coffee-script":"*",
     "mocha":"*",
     "nodemon":"*",
     "http":"*",
+    "mongodb":"*",
     "websocket":"*",
-    "pryjs":"*"
+    "pryjs":"*",
+    "ws":"2.0.3",
+    "bufferutil":"*"
   }
 }

@@ -1,0 +1,43 @@
+<title>Kool Ch8</title>
+
+<button id="new-user">Create New User</button>
+<button id="login">Log In</button>
+<button id="logout" style="display:none;">Log Out</button>
+
+<form id="new-user-form" style="display:none;">
+	<input type="text" placeholder="Enter Desired Nick"></input>
+	<input type="text" placeholder="Enter Desired Pass"></input>
+	<input type="submit"></input>
+</form>
+
+<form id="login-form" style="display:none;">
+	<input type="text" placeholder="Enter User"></input>
+	<input type="text" placeholder="Enter Pass"></input>
+	<input type="submit"></input>
+</form>
+
+
+<div id="logged-in" style="display:none;">
+	<button id="new-room">Create New Room</button>
+
+	<form id="new-room-form" style="display:none;">
+		<input type="text" placeholder="Enter Room Name"></input>
+		<input type="submit"></input>
+	</form>
+
+	<div id="existing-rooms"></div>
+	<div id="talk-block"></div>
+</div>
+
+<p id="message-log"></p>
+
+<script src="sendPost.js"></script>
+<script src="sendGet.js"></script>
+<script src="newRoom.js"></script>
+<script src="newUser.js"></script>
+<script src="login.js"></script>
+<script src="logout.js"></script>
+<script src="sockets.js"></script>
+<script src="rooms.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+

@@ -1,0 +1,21 @@
+nginx:
+  image: nginx
+  volumes:
+    - ./dist/client:/etc/nginx/html
+    - ./conf:/etc/nginx
+  ports:
+    - "1234:80"
+  links:
+    - node-server:node
+
+node-server:
+  build: .
+  links:
+    - mongo
+  expose:
+    - "1234"
+
+mongo:
+  image: mongo
+  expose:
+    - "27017"
